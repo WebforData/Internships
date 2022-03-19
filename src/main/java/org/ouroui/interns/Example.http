@@ -151,4 +151,5 @@ Content-Type: application/json
   "url": "https://github.com/quanyang/security-internships"
 }
 
-
+###
+DELETE http://localhost:8080/api/Internships/6
