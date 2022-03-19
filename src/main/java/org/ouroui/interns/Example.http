@@ -1,0 +1,154 @@
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+{
+  "role": "Web developer",
+  "company": "Google",
+  "location": "Casa",
+  "duration": 6,
+  "url": "https://github.com/quanyang/security-internships"
+}
+
+###
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+{
+  "role": "Software Security Research & Tools Development Intern",
+  "company": "Autodesk",
+  "location": "Singapore",
+  "duration": 6,
+  "url": "https://autodesk.taleo.net/careersection/adsk_cmp/jobdetail.ftl?job=16WD21579"
+}
+
+###
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+{
+  "role": "Pentesting Intern",
+  "company": "Centurion Information Security",
+  "location": "Singapore",
+  "duration": 9,
+  "url": "https://centurioninfosec.sg/careers"
+}
+
+###
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+{
+  "role": "Application Security Intern",
+  "company": "GitHub",
+  "location": "San Francisco",
+  "duration": 12,
+  "url": "https://jobs.lever.co/github/eb49d79f-7022-41d5-afaa-8b4dc8661114"
+}
+
+
+###
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+{
+  "role": "Product Security Intern",
+  "company": "GitHub",
+  "location": "San Francisco",
+  "duration": 3,
+  "url": "https://jobs.lever.co/github/d297d5f0-9eff-4cf5-bb0c-daa41a0d57db"
+}
+
+
+###
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+{
+  "role": "Pentesting Intern",
+  "company": "MWR InfoSecurity",
+  "location": "Singapore",
+  "duration": 4,
+  "url": "https://careers.mwrinfosecurity.com/Jobs/Advert/454194?FromSearch=False"
+}
+
+
+###
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+{
+  "role": "Security Intern",
+  "company": "Trail Of Bits",
+  "location": "Remotely",
+  "duration": 15,
+  "url": "https://blog.trailofbits.com/2016/08/09/work-for-us-fall-and-winter-internship-opportunities/"
+}
+
+###
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+
+{
+  "role": "Security Engineer Intern",
+  "company": "Workday",
+  "location": "San Francisco",
+  "duration": 9,
+  "url": "https://core.infosecconnect.com/amybadydyrIFSC/"
+}
+
+
+###
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+{
+  "role": "Security Intern",
+  "company": "NSHC Security",
+  "location": "Singapore",
+  "duration": 11,
+  "url": "http://www.nshc.net/wp/en/"
+}
+
+
+
+###
+POST http://localhost:8080/api/add
+Content-Type: application/json
+
+{
+  "role": "Security Technology & Response (STAR) Intern",
+  "company": "Symantec",
+  "location": "California, Culver City",
+  "duration": 14,
+  "url": "https://symantec.wd1.myworkdayjobs.com/en-US/university/job/USA---California-Culver-City/Security-Technology---Response--STAR--Intern---Symantec_34626"
+}
+
+
+
+
+
+
+###
+GET http://localhost:8080/api/Internships
+
+<> 2022-03-19T110530.200.json
+<> 2022-03-19T110410-1.200.json
+<> 2022-03-19T110208.200.json
+<> 2022-03-19T110047.200.json
+
+
+
+###
+PUT http://localhost:8080/api/Internships/put/1
+Content-Type: application/json
+
+{
+  "role": "Web developer",
+  "company": "Google",
+  "location": "Casa",
+  "duration": 17,
+  "url": "https://github.com/quanyang/security-internships"
+}
+
+
