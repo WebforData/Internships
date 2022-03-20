@@ -1,0 +1,55 @@
+
+###
+POST http://localhost:8080/api1/company/add
+Content-Type: application/json
+
+
+{
+  "name": "A. O. Smith",
+  "sector": "Industrials",
+  "symbol": "AOS"
+}
+###
+POST http://localhost:8080/api1/company/add
+Content-Type: application/json
+
+{
+  "name": "Adobe",
+  "sector": "Information Technology",
+  "symbol": "ADBE"
+}
+
+
+
+
+###
+POST http://localhost:8080/api1/company/add
+Content-Type: application/json
+
+{
+  "name": "Accenture",
+  "sector": "Information Technology",
+  "symbol": "ACN"
+}
+
+###
+POST http://localhost:8080/api1/company/add
+Content-Type: application/json
+
+{
+  "name": "AbbVie",
+  "sector": "Health Care",
+  "symbol": "ABBV"
+}
+
+###
+POST http://localhost:8080/api1/company/add
+Content-Type: application/json
+
+
+{
+  "name": "Abbott Laboratories",
+  "sector": "Health Care",
+  "symbol": "ABT"
+}
+
