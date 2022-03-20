@@ -25,6 +25,10 @@ public class InternController {
         return ResponseEntity.ok(internsRepository.findAll());
     }
 
+    @GetMapping("Internships/company/{company}")
+    public ResponseEntity<List<Internship>> findCompany(@PathVariable String company){
+        return ResponseEntity.ok(internsRepository.findByCompanyContaining(company));
+    }
     @PostMapping("/add")
     public ResponseEntity<Internship> add(@Valid @RequestBody Internship internship) {
         return new ResponseEntity<>(internsRepository.save(internship), HttpStatus.CREATED);
