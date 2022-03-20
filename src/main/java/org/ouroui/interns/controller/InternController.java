@@ -48,6 +48,10 @@ public class InternController {
     public ResponseEntity<List<Internship>> getBydura(@PathVariable int duration) {
         return ResponseEntity.ok(internsRepository.findInternshipByDuration(duration));
     }
+    @GetMapping("/Internships/duration/plus/{duration}")
+    public ResponseEntity<List<Internship>> getBydurationGreat(@PathVariable int duration) {
+        return ResponseEntity.ok(internsRepository.findByDurationGreaterThan(duration));
+    }
 
     @PutMapping("/Internships/put/{id}")
     public ResponseEntity<Internship> update(@PathVariable(value = "id") Long id, @Valid @RequestBody Internship internship) {

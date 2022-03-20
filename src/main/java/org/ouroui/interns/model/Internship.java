@@ -28,6 +28,7 @@ public class Internship implements Serializable {
     @NotBlank
     @URL
     private String url;
+
     public long getId() {
         return id;
     }
@@ -68,9 +69,6 @@ public class Internship implements Serializable {
         this.duration = duration;
     }
 
-
-
-
     public String getUrl() {
         return url;
     }
@@ -78,4 +76,5 @@ public class Internship implements Serializable {
     public void setUrl(String url) {
         this.url = url;
     }
+
 }
