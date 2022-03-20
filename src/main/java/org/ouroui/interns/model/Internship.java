@@ -11,7 +11,6 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
-
 public class Internship implements Serializable {
 
     @Id
