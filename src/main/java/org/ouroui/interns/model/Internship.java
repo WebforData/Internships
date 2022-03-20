@@ -1,13 +1,14 @@
 package org.ouroui.interns.model;
 
+
 import org.hibernate.validator.constraints.URL;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.Date;
 
 @Entity
 
@@ -28,6 +29,8 @@ public class Internship implements Serializable {
     @NotBlank
     @URL
     private String url;
+
+
 
     public long getId() {
         return id;
