@@ -13,8 +13,10 @@ import java.util.List;
 @RestController
 @RequestMapping("api/company")
 public class CompanyController {
-    @Autowired
-    CompanyRepository companyRepositry;
+    public CompanyRepository companyRepositry;
+    public CompanyController(CompanyRepository companyRepositry){
+        this.companyRepositry=companyRepositry;
+    }
     @GetMapping("/")
     public ResponseEntity<List<Company>> getCompanies(){
         return ResponseEntity.ok(companyRepositry.findAll());
@@ -23,5 +25,9 @@ public class CompanyController {
     @PostMapping("/add")
     public ResponseEntity<Company> addCompany(@Valid @RequestBody Company company){
         return new ResponseEntity<>(companyRepositry.save(company), HttpStatus.CREATED);
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<Company> gett(@PathVariable long id){
+        return ResponseEntity.ok(companyRepositry.findById(id));
     }
 }
