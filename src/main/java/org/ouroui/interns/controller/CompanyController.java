@@ -19,6 +19,11 @@ public class CompanyController {
     public ResponseEntity<List<Company>> getCompanies(){
         return ResponseEntity.ok(companyRepositry.findAll());
     }
+    @GetMapping("/{name}")
+    public ResponseEntity<List<Company>> getbyname(@PathVariable String name){
+        return ResponseEntity.ok(companyRepositry.findCompanyByNameContaining(name));
+    }
+
     @PostMapping("/add")
     public ResponseEntity<Company> addCompany(@Valid @RequestBody Company company){
         return new ResponseEntity<>(companyRepositry.save(company), HttpStatus.CREATED);
