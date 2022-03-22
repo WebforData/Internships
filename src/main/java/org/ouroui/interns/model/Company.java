@@ -17,7 +17,7 @@ public class Company {
     @NotBlank
     private String Symbol;
     @OneToMany(targetEntity = Internship.class,cascade = CascadeType.ALL)
-    @JoinColumn(name = "cp_fk",referencedColumnName = "id")
+    @JoinColumn(name = "company_id",referencedColumnName = "id")
     private List<Internship> internshipList;
 
     public Company() {

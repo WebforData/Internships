@@ -1,5 +1,7 @@
 package org.ouroui.interns.controller;
 
+import org.hibernate.criterion.Order;
+import org.ouroui.interns.Dto.OrderResponce;
 import org.ouroui.interns.model.Company;
 import org.ouroui.interns.repository.CompanyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +31,9 @@ public class CompanyController {
     @GetMapping("/{id}")
     public ResponseEntity<Company> gett(@PathVariable long id){
         return ResponseEntity.ok(companyRepositry.findById(id));
+    }
+    @GetMapping("/Info")
+    public ResponseEntity<List<OrderResponce>> getInfo(){
+        return ResponseEntity.ok(companyRepositry.getJoinInfo());
     }
 }
