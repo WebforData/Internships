@@ -132,10 +132,6 @@ Content-Type: application/json
 ###
 GET http://localhost:8080/api/Internships
 
-<> 2022-03-19T110530.200.json
-<> 2022-03-19T110410-1.200.json
-<> 2022-03-19T110208.200.json
-<> 2022-03-19T110047.200.json
 
 
 

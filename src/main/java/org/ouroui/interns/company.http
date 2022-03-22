@@ -1,55 +1,28 @@
 
 ###
-POST http://localhost:8080/api1/company/add
-Content-Type: application/json
-
-
-{
-  "name": "A. O. Smith",
-  "sector": "Industrials",
-  "symbol": "AOS"
-}
-###
-POST http://localhost:8080/api1/company/add
-Content-Type: application/json
-
-{
-  "name": "Adobe",
-  "sector": "Information Technology",
-  "symbol": "ADBE"
-}
-
-
-
-
-###
-POST http://localhost:8080/api1/company/add
-Content-Type: application/json
-
-{
-  "name": "Accenture",
-  "sector": "Information Technology",
-  "symbol": "ACN"
-}
-
-###
-POST http://localhost:8080/api1/company/add
-Content-Type: application/json
-
-{
-  "name": "AbbVie",
-  "sector": "Health Care",
-  "symbol": "ABBV"
-}
-
-###
-POST http://localhost:8080/api1/company/add
+POST http://localhost:8080/api/company/add
 Content-Type: application/json
 
 
 {
   "name": "Abbott Laboratories",
   "sector": "Health Care",
-  "symbol": "ABT"
+  "symbol": "ABT",
+  "internshipList": [
+    {
+      "role": "Web developer",
+      "company": "Abbott Laboratories",
+      "location": "Casa",
+      "duration": 17,
+      "url": "https://github.com/quanyang/security-internships"
+    },
+    {
+      "role": "Security Engineer Intern",
+      "company": "Abbott Laboratories",
+      "location": "San Francisco",
+      "duration": 9,
+      "url": "https://core.infosecconnect.com/amybadydyrIFSC/"
+    }
+  ]
 }
 

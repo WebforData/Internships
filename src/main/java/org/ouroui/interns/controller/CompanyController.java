@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/company")
 public class CompanyController {
-    public CompanyRepository companyRepositry;
+    private final CompanyRepository companyRepositry;
     public CompanyController(CompanyRepository companyRepositry){
         this.companyRepositry=companyRepositry;
     }

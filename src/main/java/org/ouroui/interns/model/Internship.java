@@ -31,6 +31,7 @@ public class Internship implements Serializable {
 
 
 
+
     public long getId() {
         return id;
     }

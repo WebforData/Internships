@@ -2,6 +2,7 @@ package org.ouroui.interns.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.util.List;
 
 @Entity
 public class Company {
@@ -15,6 +16,20 @@ public class Company {
     private String Sector;
     @NotBlank
     private String Symbol;
+    @OneToMany(targetEntity = Internship.class,cascade = CascadeType.ALL)
+    @JoinColumn(name = "cp_fk",referencedColumnName = "id")
+    private List<Internship> internshipList;
+
+    public Company() {
+    }
+
+    public List<Internship> getInternshipList() {
+        return internshipList;
+    }
+
+    public void setInternshipList(List<Internship> internshipList) {
+        this.internshipList = internshipList;
+    }
 
     public long getId() {
         return id;
